@@ -17,6 +17,7 @@ jobs:
         AWS_DEFAULT_REGION: us-east-1
         AWS_DEFAULT_OUTPUT: json
       run: aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 908947218138.dkr.ecr.us-east-1.amazonaws.com
+      
     - name: git checkout 
       uses: actions/checkout@v2
 
@@ -38,5 +39,5 @@ jobs:
     - name: Run chart-releaser
       uses: helm/chart-releaser-action@v1.4.0
       env:
-        CR_TOKEN: "${{ secrets.CR2_TOKEN }}"
+        CR_TOKEN: "${{ secrets.CR_TOKEN }}"
       
