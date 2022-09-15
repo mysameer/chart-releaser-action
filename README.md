@@ -4,6 +4,7 @@ A GitHub action to turn a GitHub project into a self-hosted Helm chart repo, usi
 
 ## Usage
 
+
 ### Pre-requisites
 
 1. A GitHub repo containing a directory with your Helm charts (default is a folder named `/charts`, if you want to
