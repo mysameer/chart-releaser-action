@@ -3,7 +3,7 @@ name: helm-chart-releaser
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   helm-installer:
